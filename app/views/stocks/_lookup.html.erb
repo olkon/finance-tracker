@@ -28,10 +28,10 @@
       <% else %>
         <span class="label label-default">
           <% if !current_user.under_stock_limit? %>
-            Stock was not added! (over maximum limit)
+            Cannot add (stock portfolio full)
           <% end %>
           <% if current_user.stock_already_added?(@stock.ticker) %>
-            That stock is already in your portfolio!
+            Stock already in portfolio
           <% end %>
         </span>
       <% end %>
