@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   
   devise_for :users, :controllers => { :registrations => "user/registrations"}
   resources :user_stocks, except: [:edit, :update, :show]
+  resources :users, only: [:show]
+  resources :friendships
   
   root 'welcome#index'
   
