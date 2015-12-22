@@ -1,28 +1,19 @@
-== README
+== FINANCE-TRACKER
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Second learning project for a Udemy RoR developer course. It's a stock portfolio tracker.
 
-Things you may want to cover:
+=== Objectives
+* Recap on what I've already learned
+* Start expanding RoR know-how beyond the generic CRUD app
+* Work more comfortably with new and exciting Rails gems
+* Keep drawing a space ship in my Github contribution history
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+=== Features
+* Users can add/remove stocks into/from their personal portfolio
+* Stock search (by stock symbol) uses AJAX. You can look at a spinner while it works!
+* Users can (with partial matching, also AJAX) search for and add other users as their friends
+* ... and look at other users' portfolios
+* stock_quote[https://github.com/tyrauber/stock_quote] for fetching stock data from Yahoo
+* Devise[https://github.com/plataformatec/devise] to streamline/outsource the bulk of user sign-up/authentication. Some personal customization of the user model
+* Twitter-Bootstrap[https://github.com/seyhunak/twitter-bootstrap-rails] to jumpstart styling
+* ^ It's mobile friendly!
